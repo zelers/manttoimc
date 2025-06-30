@@ -3,94 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantto IMC - Sitio en Construcción</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
-        }
-        .container {
-            max-width: 600px;
-            padding: 2rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-top: 5px solid #2a5ca7;
-        }
-        h1 {
-            color: #2a5ca7;
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .logo {
-            font-weight: bold;
-            font-size: 2.2rem;
-            color: #2a5ca7;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .highlight {
-            color: #f39c12;
-            font-weight: bold;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-        .construction-icon {
-            font-size: 4rem;
-            margin: 1rem 0;
-            color: #f39c12;
-        }
-        .contact {
-            background-color: #f8f9fa;
-            padding: 1rem;
-            border-radius: 5px;
-            margin-top: 1.5rem;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #2a5ca7;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 1rem;
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #1e4b8f;
-            transform: translateY(-2px);
-        }
-    </style>
+    <title>MANTTO IMC - Industria Mineria y Construcción</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">Mantto <span class="highlight">IMC</span></div>
-        <div class="construction-icon">🚧</div>
-        <h1>Página en Construcción</h1>
-        <p>Lo sentimos, la página que buscas no está disponible temporalmente mientras realizamos mejoras para ofrecerte un mejor servicio.</p>
-        <p>Estamos trabajando arduamente para terminar los ajustes. Por favor, vuelve pronto.</p>
-        
-        <div class="contact">
-            <p>Para consultas urgentes, contáctenos:</p>
-            <p>📞 Teléfono: [987 004 177]</p>
-            <p>✉️ Email: <a href="mailto:contacto@manttoimc.com">contacto@manttoimc.com</a></p>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MANTTO <span>IMC</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Quiénes Somos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
         </div>
-        
-        <a href="/" class="btn">Volver al Inicio</a>
-    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Mantenimiento y Servicios Industriales</h2>
+                <p>Industia - Mineria - Construcción</p>
+                <a href="#contacto" class="btn">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <h2 class="section-title">Quiénes Somos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><strong>MANTTO IMC S.R.L.</strong> es una empresa dedicada a brindar servicios integrales de mantenimiento y desarrollo de proyectos mecánicos y eléctricos en el sector minero e industrial.</p>
+                    <p>Nuestro modelo de negocios consiste en optimizar la disponibilidad de los equipos y maquinarias en los diferentes procesos de producción.</p>
+                    
+                    <div class="mission-vision">
+                        <div class="card">
+                            <i class="fas fa-bullseye"></i>
+                            <h3>Misión</h3>
+                            <p>Ofrecer a nuestros clientes soluciones efectivas basadas en servicios oportunos, innovadores y confiables con la mejor relación costo-beneficio.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-eye"></i>
+                            <h3>Visión</h3>
+                            <p>Ser considerados por nuestros clientes como la mejor opción estratégica para el desarrollo de sus proyectos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-image.jpg" alt="Equipo de MANTTO INDUSTRIAL">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <!-- Filtros Prensa -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Mantenimiento Integral de Filtros Prensa</h3>
+                    <ul>
+                        <li>Sistema de lavado</li>
+                        <li>Sistema de traslado de placas</li>
+                        <li>Mecanismos de cierre y apertura</li>
+                        <li>Unidad hidráulica</li>
+                        <li>Mantenimiento de placas</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1epUlUv9qPE7XCDu_wUN5qh1dUyy9dlh7/view?usp=drive_link" class="btn-service">Más información</a>
+                </div>
+
+                <!-- Equipos Merrill Crowe -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Mantenimiento de Equipos Merrill Crowe</h3>
+                    <ul>
+                        <li>Bomba de precipitado</li>
+                        <li>Filtro clarificador</li>
+                        <li>Filtro de precipitados</li>
+                        <li>Bomba de vacío</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1epUlUv9qPE7XCDu_wUN5qh1dUyy9dlh7/view?usp=drive_link" class="btn-service">Más información</a>
+                </div>
+
+                <!-- Sistemas Hidráulicos -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Mantenimiento de Sistemas Hidráulicos</h3>
+                    <ul>
+                        <li>Pistones hidráulicos</li>
+                        <li>Bombas y motores hidráulicos</li>
+                        <li>Unidad hidráulica</li>
+                        <li>Mantenimiento preventivo</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1epUlUv9qPE7XCDu_wUN5qh1dUyy9dlh7/view?usp=drive_link" class="btn-service">Más información</a>
+                </div>
+
+                <!-- Sistemas de Bombeo -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Mantenimiento de Sistemas de Bombeo</h3>
+                    <ul>
+                        <li>Mantenimiento predictivo</li>
+                        <li>Mantenimiento correctivo</li>
+                        <li>Bombas centrífugas, sumergibles, etc.</li>
+                        <li>Mantenimiento preventivo</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1epUlUv9qPE7XCDu_wUN5qh1dUyy9dlh7/view?usp=drive_link" class="btn-service">Más información</a>
+                </div>
+
+                <!-- Estructuras Metálicas -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Fabricación y Montaje de Estructuras Metálicas</h3>
+                    <ul>
+                        <li>Estructuras y naves industriales</li>
+                        <li>Chute de apron feeder</li>
+                        <li>Pórticos monorriel</li>
+                        <li>Líneas contraincendios</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1epUlUv9qPE7XCDu_wUN5qh1dUyy9dlh7/view?usp=drive_link" class="btn-service">Más información</a>
+                </div>
+
+                <!-- Proyectos Mecánicos/Eléctricos -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Desarrollo de Proyectos Mecánicos y Eléctricos</h3>
+                    <ul>
+                        <li>Diseño e implementación</li>
+                        <li>Optimización de procesos</li>
+                        <li>Soluciones personalizadas</li>
+                    </ul>
+                    <a href="https://drive.google.com/file/d/1epUlUv9qPE7XCDu_wUN5qh1dUyy9dlh7/view?usp=drive_link" class="btn-service">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients">
+        <div class="container">
+            <h2 class="section-title">Nuestros Clientes</h2>
+            <div class="client-logos">
+                <img src="images/chinalco-logo.png" alt="Minera Chinalco Perú">
+                <img src="images/buenaventura.jpg" alt="Minera Chinalco Perú">
+                <img src="images/exsa.jpg" alt="Minera Chinalco Perú">
+                <!-- Agrega más logos de clientes aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 987 004 177 </li>
+                        <li><i class="fas fa-envelope"></i> mantto.imc@manttoimc.com</li>
+                        <li><i class="fas fa-envelope"></i> administracion@manttoimc.com</li>
+                        <li><i class="fas fa-envelope"></i> mantto.imc@gmail.com</li>
+                        <li><i class="fas fa-id-card"></i> RUC: 20########X</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Correo Electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MANTTO <span>IMC</span></h2>
+                    <p>Industria - Mineria - Construcción</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Quiénes Somos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MANTTO IMC S.R.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
